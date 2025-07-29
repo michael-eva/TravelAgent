@@ -3,11 +3,11 @@ import Link from 'next/link';
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-100 to-blue-300 p-4">
-      <div className="max-w-md text-center bg-white shadow-xl rounded-lg p-8">
-        <h1 className="text-4xl font-bold text-blue-600 mb-4">Travel Agent</h1>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-blue-900 text-white p-4">
+      <div className="max-w-md text-center bg-blue-800 shadow-xl rounded-lg p-8">
+        <h1 className="text-4xl font-bold text-blue-200 mb-4">Travel Agent</h1>
         
-        <p className="text-gray-700 mb-6">
+        <p className="text-blue-100 mb-6">
           Capture your travel memories and share your journey with the world!
         </p>
         
@@ -29,7 +29,7 @@ export default function LandingPage() {
         <div className="mt-8">
           <Link 
             href="/dashboard" 
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300"
           >
             Get Started
           </Link>
@@ -41,9 +41,9 @@ export default function LandingPage() {
 
 function Feature({ title, description }: { title: string, description: string }) {
   return (
-    <div className="bg-blue-50 p-4 rounded-md">
-      <h3 className="font-semibold text-blue-700 mb-2">{title}</h3>
-      <p className="text-gray-600 text-sm">{description}</p>
+    <div className="bg-blue-700 p-4 rounded-md">
+      <h3 className="font-semibold text-blue-100 mb-2">{title}</h3>
+      <p className="text-blue-200 text-sm">{description}</p>
     </div>
   );
 }
