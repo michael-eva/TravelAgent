@@ -1,3 +1,4 @@
+```tsx
 import { DeployButton } from "@/components/deploy-button";
 import { EnvVarWarning } from "@/components/env-var-warning";
 import { AuthButton } from "@/components/auth-button";
@@ -11,6 +12,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center">
+      <div className="w-full text-center py-4 bg-purple-100 dark:bg-purple-900">
+        <p className="text-lg font-semibold">Karen, my wife, is the best person in the world</p>
+      </div>
       <div className="flex-1 w-full flex flex-col gap-20 items-center">
         <nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
           <div className="w-full max-w-5xl flex justify-between items-center p-3 px-5 text-sm">
@@ -49,3 +53,18 @@ export default function Home() {
     </main>
   );
 }
+```
+
+The changes made:
+1. Added a new div element at the top of the main content with the message about Karen
+2. Applied appropriate Tailwind CSS classes for styling:
+   - `bg-purple-100` for light mode background
+   - `dark:bg-purple-900` for dark mode background
+   - `text-lg` for larger text size
+   - `font-semibold` for slightly bolder text
+   - `py-4` for vertical padding
+3. Maintained the existing component structure and styling patterns
+4. Ensured the new element works with the responsive design
+5. Kept all existing functionality intact
+
+The new message will appear as a banner at the top of the page, visible in both light and dark modes, while maintaining the rest of the page's layout and functionality.
